@@ -3,6 +3,9 @@ import NavContext from "../context/navContext";
 import {
   ImgSideBar,
   SliderSideBar,
+  SliderSideBar_kblogistics,
+  SliderSideBar_SUPERCRIP,
+  SliderSideBar_next_pay,
   VideoSideBar,
   YoutubeSideBar,
 } from "./WorkSideBar";
@@ -10,93 +13,77 @@ import {
 const workData = [
   {
     img: "img/projects/project-1.jpg",
-    name: "Image Format",
+    name: "Uruloki Group",
+    format: "Uruloki",
+    project: "BlockChain",
+    client: "KKingsbe",
+    duration: "3 MONTHS",
+    technologies: ["Nextjs", "Web3.0"],
+    link: "https://www.tsuka.world/",
+  },
+  {
+    img: "img/projects/www.flowheel.io_.jpg",
+    name: "FLOWHELL",
     format: "img",
     project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
+    client: "OPH Holdings, LLC",
+    duration: "1 year",
+    technologies: [
+      "React/Next.js",
+      "SSR/SSG",
+      "Stripe.js",
+      "RestFul API",
+      "Axios",
+      "PostgreSQL",
+      "Postman",
+    ],
+    link: "https://flowheel.io",
   },
+
   {
-    img: "img/projects/project-2.jpg",
-    name: "Youtube Format",
-    format: "youtube",
+    img: "img/projects/kblogistics.jpg",
+    name: "kblogistics",
+    format: "kblogistics",
     project: "WEBSITE",
-    client: "ENVATO",
+    client: "OPH HOLDINGS, LLC",
     duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
+    technologies: ["React/Next.js", "Bootstrap 5.0", "Wow.js", "AOS - Animate"],
+    Description: "Converted Figma Design into a React Application",
+    link: "https://www.kblogisticsusa.com/"
   },
   {
-    img: "img/projects/project-3.jpg",
-    name: "Slider Format",
-    format: "slider",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
-  },
-  {
-    img: "img/projects/project-4.jpg",
-    name: "Video Format",
-    format: "video",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
-  },
-  {
-    img: "img/projects/project-5.jpg",
-    name: "Image Format",
+    img: "img/projects/music_app.jpg",
+    name: "iDoser Premium",
     format: "img",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
+    project: "MusicApp",
+    client: "iDoser company",
+    duration: "4 MONTHS",
+    technologies: ["Kotlin", "Swift"],
+    Description: " iDoser is the original mainstream audio induction product.",
+    link: "https://play.google.com/store/apps/details?id=com.yudiz.idoser&hl=en&gl=US"
   },
   {
-    img: "img/projects/project-6.jpg",
-    name: "Image Format",
-    format: "img",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
+    img: "img/projects/next_pay.jpg",
+    name: "NextPay APP",
+    format: "next_pay",
+    project: "NextPay APP",
+    client: "Tech Enterprises LLC",
+    duration: "2 MONTHS",
+    technologies: ["Android"],
+    Description:
+      "Use your phone as your wallet and pay with it at any eligible store or business.",
+    link: "https://play.google.com/store/apps/details?id=com.TechKW.nextpay&hl=en&gl=US"
   },
   {
-    img: "img/projects/project-7.jpg",
-    name: "Image Format",
-    format: "img",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
-  },
-  {
-    img: "img/projects/project-8.jpg",
-    name: "Image Format",
-    format: "img",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
-  },
-  {
-    img: "img/projects/project-9.jpg",
-    name: "Image Format",
-    format: "img",
-    project: "WEBSITE",
-    client: "ENVATO",
-    duration: "3 MONTHS",
-    technologies: ["HTML", "JAVASCRIPT"],
-    budget: "1550 USD",
+    img: "img/projects/supercrip_1.jpg",
+    name: "SUPERCRIP",
+    format: "SUPERCRIP",
+    project: "NFT MINTING DAPP",
+    client: "RANDALL MILLER",
+    duration: "9 MONTHS",
+    technologies: ["GSAP", "Web3.js", "Solidity", "Hardhat"],
+    Description: "Built NFT minting Dapp from scratch including Smart Contract",
+    link: "https://supercrip.io/"
   },
 ];
 
@@ -114,11 +101,11 @@ const Work = () => {
           {/* Main Heading Starts */}
           <div className="container page-title text-center">
             <h2 className="text-center">
-              my <span>portfolio</span>
+              Our <span>Works</span>
             </h2>
             <span className="title-head-subtitle">
               a few recent design and coding projects. Want to see more? Email
-              me.
+              us.
             </span>
           </div>
           {/* Main Heading Ends */}
@@ -167,8 +154,14 @@ const Work = () => {
                 <ImgSideBar img={work.img} />
               ) : work.format == "youtube" ? (
                 <YoutubeSideBar playing={active} />
-              ) : work.format == "slider" ? (
+              ) : work.format == "Uruloki" ? (
                 <SliderSideBar />
+              ) : work.format == "kblogistics" ? (
+                <SliderSideBar_kblogistics />
+              ) : work.format == "next_pay" ? (
+                <SliderSideBar_next_pay />
+              ) : work.format == "SUPERCRIP" ? (
+                <SliderSideBar_SUPERCRIP />
               ) : (
                 <VideoSideBar playing={active} />
               )}
@@ -212,32 +205,59 @@ const Work = () => {
                       {work.duration}
                     </span>
                   </li>
-                  <li>
-                    <i className="fa fa-code" />{" "}
-                    <span className="font-weight-400 project-label">
-                      {" "}
-                      Technologies
-                    </span>{" "}
-                    :{" "}
-                    <span className="font-weight-600 uppercase">
+                  <li className="d-flex">
+                    <div className="d-flex mr-2">
+                      <i className="fa fa-code  mt-1" />{" "}
+                      <span className="font-weight-400 project-label">
+                        Technologies
+                      </span>
+                      :
+                    </div>
+                    <div className="d-flex flex-wrap">
                       {work.technologies.map((technologie, i) => (
-                        <Fragment key={i}>{technologie}</Fragment>
+                        <span
+                          className="font-weight-600 mr-2 text-nowrap"
+                          key={i}
+                        >
+                          {technologie}
+                          {i + 1 < work.technologies.length && ","}
+                        </span>
                       ))}
-                    </span>
+                    </div>
                   </li>
-                  <li>
-                    <i className="fa fa-money" />{" "}
+                  {/* <li>
+                    <i className="fa fa-file-text-o" />{" "}
                     <span className="font-weight-400 project-label">
                       {" "}
-                      Budget
+                      Description
                     </span>{" "}
                     :{" "}
                     <span className="font-weight-600 uppercase">
-                      {work.budget}
+                      {work.Description}
                     </span>
-                  </li>
+                  </li> */}
+
+                  {work.Description && (
+                    <li className="d-flex">
+                      <div className="d-flex align-items-start mr-2">
+                        <i className="fa fa-file-text-o mt-1" />
+                        <span className="font-weight-400 project-label">
+                          Description{" "}
+                        </span>
+                        :{" "}
+                      </div>
+                      <span className="font-weight-600">
+                        {work.Description}
+                      </span>
+                    </li>
+                  )}
                 </ul>
-                <a href="#" className="btn">
+                <a
+                  href={work.link || "#"}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
                   <span>
                     <i className="fa fa-external-link" />
                     preview

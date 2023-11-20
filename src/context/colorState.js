@@ -20,7 +20,7 @@ const navReducer = (state, action) => {
 
 const ColorState = (props) => {
   const initialState = {
-    color: "yellow",
+    color: "green",
   };
   const [state, dispatch] = useReducer(navReducer, initialState);
 

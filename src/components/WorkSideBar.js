@@ -70,15 +70,127 @@ export const SliderSideBar = () => {
         indicators={false}
       >
         <Carousel.Item className="carousel-item" interval={1000}>
-          <img src="img/projects/project-8.jpg" alt="slide 1" />
+          <img src="img/projects/project-1.jpg" alt="slide 1" />
         </Carousel.Item>
         <Carousel.Item className="carousel-item" interval={1000}>
-          <img src="img/projects/project-7.jpg" alt="slide 2" />
+          <img src="img/projects/project-2.jpg" alt="slide 2" />
         </Carousel.Item>
         <Carousel.Item className="carousel-item" interval={1000}>
-          <img src="img/projects/project-5.jpg" alt="slide 3" />
+          <img src="img/projects/project-3.jpg" alt="slide 3" />
         </Carousel.Item>
       </Carousel>
     </div>
   );
 };
+
+
+export const SliderSideBar_kblogistics = () => {
+  return (
+    <div
+      id="slider"
+      className="carousel slide portfolio-slider"
+      data-ride="carousel"
+    >
+      {/* The slideshow */}
+      <Carousel
+        className="carousel-inner"
+        prevIcon={
+          <a className="carousel-control-prev" href="#slider" data-slide="prev">
+            <span className="fa fa-chevron-left carousel-controls" />
+          </a>
+        }
+        nextIcon={
+          <a className="carousel-control-next" href="#slider" data-slide="next">
+            <span className="fa fa-chevron-right carousel-controls" />
+          </a>
+        }
+        prevLabel=""
+        nextLabel=""
+        indicators={false}
+      >
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/kblogistics.jpg" alt="slide 1" />
+        </Carousel.Item>
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/figma.png" alt="slide 2" />
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
+};
+export const SliderSideBar_next_pay = () => {
+  return (
+    <div
+      id="slider"
+      className="carousel slide portfolio-slider"
+      data-ride="carousel"
+    >
+      {/* The slideshow */}
+      <Carousel
+        className="carousel-inner"
+        prevIcon={
+          <a className="carousel-control-prev" href="#slider" data-slide="prev">
+            <span className="fa fa-chevron-left carousel-controls" />
+          </a>
+        }
+        nextIcon={
+          <a className="carousel-control-next" href="#slider" data-slide="next">
+            <span className="fa fa-chevron-right carousel-controls" />
+          </a>
+        }
+        prevLabel=""
+        nextLabel=""
+        indicators={false}
+      >
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/nextpay1.jpg" alt="slide 1" />
+        </Carousel.Item>
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/nextpay2.jpg" alt="slide 2" />
+        </Carousel.Item>
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/nextpay3.jpg" alt="slide 3" />
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
+};
+export const SliderSideBar_SUPERCRIP = () => {
+  return (
+    <div
+      id="slider"
+      className="carousel slide portfolio-slider"
+      data-ride="carousel"
+    >
+      {/* The slideshow */}
+      <Carousel
+        className="carousel-inner"
+        prevIcon={
+          <a className="carousel-control-prev" href="#slider" data-slide="prev">
+            <span className="fa fa-chevron-left carousel-controls" />
+          </a>
+        }
+        nextIcon={
+          <a className="carousel-control-next" href="#slider" data-slide="next">
+            <span className="fa fa-chevron-right carousel-controls" />
+          </a>
+        }
+        prevLabel=""
+        nextLabel=""
+        indicators={false}
+      >
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/supercrip_1.jpg" alt="slide 1" />
+        </Carousel.Item>
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/supercrip_2.jpg" alt="slide 2" />
+        </Carousel.Item>
+        <Carousel.Item className="carousel-item" interval={1000}>
+          <img src="img/projects/supercrip_3.jpg" alt="slide 3" />
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
+};
+
+

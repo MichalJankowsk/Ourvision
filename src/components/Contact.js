@@ -21,10 +21,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_vizfrnj", // service id
-          "template_s8j4zqi", // template id
+          "service_gehpmvj", // service id
+          "template_ftf0exe", // template id
           mailData,
-          "wKml5H5BRXb_ZWihB" // public api
+          "4fw8h3xNaEXhTpGrH" // public api
         )
         .then(
           (response) => {
@@ -53,18 +53,17 @@ const Contact = () => {
             get <span>in touch</span>
           </h2>
           <span className="title-head-subtitle">
-            I’m always open to discussing product design work or partnerships.
+            We’re always open to discussing perfect work or partnerships.
           </span>
         </div>
         {/* Main Heading Ends */}
         <div className="container text-center">
           <div className="row contact justify-content-center">
-          
             {/* Contact Form Starts */}
             <div className="col-12 col-md-8 col-xl-8 rightside">
               <p>
                 If you have any suggestion, project or even you want to say
-                Hello.. please fill out the form below and I will reply you
+                Hello.. please fill out the form below and we will reply you
                 shortly.
               </p>
               <form className="contactform" onSubmit={(e) => onSubmit(e)}>
